@@ -1,0 +1,9 @@
+-
+  name: 文件上传接口
+  request:
+    method: post
+    base_url: https://api.weixin.qq.com
+    url: /cgi-bin/media/uploadimg?access_token=${read_extract(access_token)}
+    files:
+      media: D:\img\abc.jpg
+  validate: ~

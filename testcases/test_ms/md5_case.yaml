@@ -1,0 +1,10 @@
+-
+  name: 自定义MD5加密接口
+  request:
+    method: post
+    base_url: ${get_base_url(ms2)}
+    url: /md5login
+    data:
+      username: ${md5(admin)}
+      password: ${md5(123)}
+  validate: ~

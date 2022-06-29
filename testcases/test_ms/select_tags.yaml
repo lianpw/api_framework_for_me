@@ -1,0 +1,7 @@
+-
+  name: 获取公众号已创建的标签接口
+  request:
+    method: get
+    base_url: https://api.weixin.qq.com
+    url: /cgi-bin/tags/get?access_token=${read_extract(access_token)}
+  validate: ~

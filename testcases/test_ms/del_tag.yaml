@@ -1,0 +1,8 @@
+-
+  name: 删除标签接口
+  request:
+    method: post
+    base_url: https://api.weixin.qq.com
+    url: /cgi-bin/tags/delete?access_token=${read_extract(access_token)}
+    json: {"tag":{"id":"${read_extract(tag_id)}"}}
+  validate: ~

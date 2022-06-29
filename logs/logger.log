@@ -1,0 +1,122 @@
+[2022-06-29 18:26:10,546] INFO [root] [log_util.py (info_log:14)] - ----------接口测试开始----------
+[2022-06-29 18:26:10,547] INFO [root] [log_util.py (info_log:14)] - 接口名称：自定义MD5加密接口
+[2022-06-29 18:26:10,548] INFO [root] [log_util.py (info_log:14)] - 请求方式：post
+[2022-06-29 18:26:10,549] INFO [root] [log_util.py (info_log:14)] - 请求路径：http://101.34.221.219:5000/md5login
+[2022-06-29 18:26:10,550] INFO [root] [log_util.py (info_log:14)] - 请求data参数：{'username': '21232f297a57a5a743894a0e4a801fc3', 'password': '202cb962ac59075b964b07152d234b70'}
+[2022-06-29 18:26:10,616] INFO [root] [log_util.py (info_log:14)] - 预期结果：None
+[2022-06-29 18:26:10,616] INFO [root] [log_util.py (info_log:14)] - 实际结果：{"error_code":0,"message":"MD5\u52a0\u5bc6\u767b\u9646\u6210\u529f\uff01"}
+
+[2022-06-29 18:26:10,617] INFO [root] [log_util.py (info_log:14)] - 没有断言!
+[2022-06-29 18:26:10,617] INFO [root] [log_util.py (info_log:14)] - 接口测试成功
+[2022-06-29 18:26:10,618] INFO [root] [log_util.py (info_log:14)] - ----------接口测试结束----------
+
+[2022-06-29 18:26:10,622] INFO [root] [log_util.py (info_log:14)] - ----------接口测试开始----------
+[2022-06-29 18:26:10,623] INFO [root] [log_util.py (info_log:14)] - 接口名称：SIGN签名接口
+[2022-06-29 18:26:10,623] INFO [root] [log_util.py (info_log:14)] - 请求方式：post
+[2022-06-29 18:26:10,624] INFO [root] [log_util.py (info_log:14)] - 请求路径：http://47.107.116.139/phpwind/?b=2&c=3
+[2022-06-29 18:26:10,629] INFO [root] [log_util.py (info_log:14)] - 请求headers参数：{'sign': '34FBADDD7AB56C4CDBBB50E15BB3F866'}
+[2022-06-29 18:26:10,630] INFO [root] [log_util.py (info_log:14)] - 请求params参数：{'a': 1}
+[2022-06-29 18:26:10,630] INFO [root] [log_util.py (info_log:14)] - 请求data参数：{'username': '69341', 'password': 123}
+[2022-06-29 18:26:10,777] INFO [root] [log_util.py (info_log:14)] - 返回的结果不是json格式!
+[2022-06-29 18:26:10,778] INFO [root] [log_util.py (info_log:14)] - 预期结果：None
+[2022-06-29 18:26:10,779] INFO [root] [log_util.py (info_log:14)] - 实际结果：<!doctype html>
+<html>
+<head>
+<title>404 Not Found</title>
+<meta name="robots" content="noindex,nofollow">
+<style>
+body {
+	font: 12px/1.5 Verdana;
+	color: #333;
+	background: #f3f3f3;
+}
+
+.wind_wrap {
+	width: 70%;
+	margin: 50px auto;
+	border: 1px solid #ccc;
+	background: #fff;
+}
+
+.wind_wrap h1 {
+	border-bottom: 1px solid #ccc;
+	line-height: 40px;
+	height: 40px;
+	padding: 0 20px;
+	margin: 0;
+	font-size: 16px;
+	background:#f9f9f9;
+	background-repeat: no-repeat;
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), color-stop(25%, #ffffff), to(#f4f4f4));
+	background-image: -webkit-linear-gradient(#ffffff, #ffffff 25%, #f4f4f4);
+	background-image: -moz-linear-gradient(top, #ffffff, #ffffff 25%, #f4f4f4);
+	background-image: -ms-linear-gradient(#ffffff, #ffffff 25%, #f4f4f4);
+	background-image: -o-linear-gradient(#ffffff, #ffffff 25%, #f4f4f4);
+	background-image: linear-gradient(#ffffff, #ffffff 25%, #f4f4f4);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f4f4f4', GradientType=0);
+}
+
+.wind_wrap h1 span {
+	color: #dd5925;
+}
+
+.wind_main {
+	padding: 20px;
+	line-height: 1.8;
+}
+
+.wind_wrap h2 {
+	color: #dd5925;
+	font-size: 14px;
+	background: #f9eeea;
+	margin-bottom: 10px;
+	line-height: 25px;
+	padding: 0 10px;
+}
+
+.wind_wrap h3 {
+	padding-left: 24px;
+	background: #f7f7f7;
+	font-weight: 100;
+	font-size: 12px;
+	margin-bottom: 10px;
+}
+
+.wind_wrap ul {
+	padding-left: 48px;
+	margin-bottom: 10px;
+}
+
+.wind_wrap ul li:hover {
+	background: #f3f3f3;
+}
+
+.wind_wrap .err {
+	color: #ff0000;
+	background: #faf6f4;
+}
+
+.wind_wrap .tips {
+	padding: 5px 10px;
+	background: #ffffe3;
+	border: 1px solid #cccccc;
+	line-height: 20px;
+	color: #333;
+}
+</style>
+</head>
+<body>
+<div class="wind_wrap">
+<div class="wind_main">
+<h2>Uncaught error with message 'Your requested &#039;APPS:bbs.controller.3Controller&#039; was not found on this server.'</h2>
+<div class="tips">The server encountered an internal error and failed to process your request. 
+Please try again later. If this error is temporary, reloading the page might resolve the problem.
+<br>If you are able to contact the administrator report this error message.(http://www.windframework.com/)</div>
+</div>
+</div>
+</body>
+</html>
+[2022-06-29 18:26:10,784] INFO [root] [log_util.py (info_log:14)] - 没有断言!
+[2022-06-29 18:26:10,784] INFO [root] [log_util.py (info_log:14)] - 接口测试成功
+[2022-06-29 18:26:10,785] INFO [root] [log_util.py (info_log:14)] - ----------接口测试结束----------
+

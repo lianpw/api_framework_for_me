@@ -1,0 +1,10 @@
+#基础路径配置
+base_url:
+  ms: https://api.weixin.qq.com
+  ms2: http://101.34.221.219:5000
+
+#日志的配置
+log:
+  log_filename: logger.log
+  log_level: info
+  log_format: '[%(asctime)s] %(levelname)s [%(name)s] [%(filename)s (%(funcName)s:%(lineno)d)] - %(message)s'

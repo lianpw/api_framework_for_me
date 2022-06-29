@@ -1,0 +1,8 @@
+-
+  name: 编辑标签接口
+  request:
+    method: post
+    base_url: https://api.weixin.qq.com
+    url: /cgi-bin/tags/update?access_token=${read_extract(access_token)}
+    json: {"tag" : {"id":"${read_extract(tag_id)}","name":"山东${get_random(1000,9999)}"}}
+  validate: ~
